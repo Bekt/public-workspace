@@ -9,6 +9,8 @@ virtualenv -p python3 venv
 ./venv/bin/pip install -r requirements.txt
 ./venv/bin/python -m ipykernel install --user --name=venv
 
+mv .env.local .env
+
 jupyter-lab
 ```
 
